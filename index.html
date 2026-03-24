@@ -54,11 +54,43 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: #4a3728;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+    }
+    .ratings {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8rem;
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .badge-tabelog {
+      background: #fff0e0;
+      color: #e07800;
+      border: 1px solid #f5c07a;
+    }
+    .badge-google {
+      background: #e8f4ea;
+      color: #2e7d32;
+      border: 1px solid #a5d6a7;
+    }
+    .atmosphere {
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 10px;
+      line-height: 1.5;
     }
     .desc {
       font-size: 0.88rem;
-      color: #666;
+      color: #555;
       line-height: 1.6;
       margin-bottom: 10px;
     }
@@ -75,7 +107,6 @@
       transition: background 0.2s;
     }
     .map-link:hover { background: #d2e3fc; }
-    .map-link svg { flex-shrink: 0; }
   </style>
 </head>
 <body>
@@ -88,7 +119,12 @@
       <div class="number">1</div>
       <div class="content">
         <div class="name">さぼうる</div>
-        <div class="desc">秘密基地のような山小屋風の内装が人気の有名店。</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.69</span>
+          <span class="badge badge-google">Google ★ 4.0</span>
+        </div>
+        <div class="atmosphere">🗣 南国のお面と薄暗い照明が作る"秘密の山小屋"。ロックBGMが流れる昭和ノスタルジー全開の名店。</div>
+        <div class="desc">秘密基地のような山小屋風の内装が人気の有名店。喫茶店百名店2021・2022選出。</div>
         <a class="map-link" href="https://www.google.com/maps/search/さぼうる+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Googleマップで見る
@@ -100,6 +136,11 @@
       <div class="number">2</div>
       <div class="content">
         <div class="name">ラドリオ</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.71</span>
+          <span class="badge badge-google">Google ★ 4.3</span>
+        </div>
+        <div class="atmosphere">🗣 シャンソンが流れるレンガ造りの空間。1949年創業、日本初のウィンナーコーヒー発祥の老舗。</div>
         <div class="desc">日本初のウィンナーコーヒーを提供。レンガ造りの老舗。</div>
         <a class="map-link" href="https://www.google.com/maps/search/ラドリオ+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -112,7 +153,12 @@
       <div class="number">3</div>
       <div class="content">
         <div class="name">ミロンガ・ヌオーバ</div>
-        <div class="desc">アルゼンチンタンゴが流れる大人な空間。世界のビールも。</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.64</span>
+          <span class="badge badge-google">Google ★ 4.1</span>
+        </div>
+        <div class="atmosphere">🗣 テラコッタの床に古いレコードからタンゴが流れる。1953年創業、国内随一のタンゴ喫茶。</div>
+        <div class="desc">アルゼンチンタンゴが流れる大人な空間。世界のビールも楽しめる。</div>
         <a class="map-link" href="https://www.google.com/maps/search/ミロンガヌオーバ+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Googleマップで見る
@@ -124,6 +170,11 @@
       <div class="number">4</div>
       <div class="content">
         <div class="name">カフェ・トロワバグ</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.73</span>
+          <span class="badge badge-google">Google ★ 4.2</span>
+        </div>
+        <div class="atmosphere">🗣 地下に降りると別世界。ネルドリップのエイジングコーヒーとジャズが静かに響く。喫茶店百名店2022選出。</div>
         <div class="desc">地下の静かな空間でジャズを楽しめる。グラタントーストが名物。</div>
         <a class="map-link" href="https://www.google.com/maps/search/カフェトロワバグ+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -136,7 +187,12 @@
       <div class="number">5</div>
       <div class="content">
         <div class="name">神田伯剌西爾（かんだぶらじる）</div>
-        <div class="desc">囲炉裏のある和洋折衷な空間。自家焙煎の本格派。</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.71</span>
+          <span class="badge badge-google">Google ★ 3.8</span>
+        </div>
+        <div class="atmosphere">🗣 書泉グランデ隣・地下の隠れ家。囲炉裏のある和の空間で、注文ごとに豆を挽く直火式自家焙煎コーヒー。</div>
+        <div class="desc">囲炉裏のある和洋折衷な空間。自家焙煎の本格派。喫茶店百名店2022選出。</div>
         <a class="map-link" href="https://www.google.com/maps/search/神田伯剌西爾+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Googleマップで見る
@@ -148,7 +204,12 @@
       <div class="number">6</div>
       <div class="content">
         <div class="name">ティーハウスタカノ</div>
-        <div class="desc">東京初の紅茶専門店。紅茶好きには外せない聖地。</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.69</span>
+          <span class="badge badge-google">Google ★ 4.0</span>
+        </div>
+        <div class="atmosphere">🗣 1974年創業・東京最古の紅茶専門店。地下の隠れ家的空間に漂う品の良い静けさ。セイロンティーとスコーンが定番。</div>
+        <div class="desc">東京初の紅茶専門店。紅茶好きには外せない聖地。カフェ百名店2021選出。</div>
         <a class="map-link" href="https://www.google.com/maps/search/ティーハウスタカノ+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Googleマップで見る
@@ -160,6 +221,11 @@
       <div class="number">7</div>
       <div class="content">
         <div class="name">珈琲舎 蔵</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.73</span>
+          <span class="badge badge-google">Google ★ 4.5</span>
+        </div>
+        <div class="atmosphere">🗣 ビル2階の隠れ家。飴色カウンターとクラシックBGM。読書と珈琲のために作られたような静謐な空間。喫茶店百名店2022選出。</div>
         <div class="desc">2階にある落ち着いた隠れ家。丁寧に淹れられた珈琲が楽しめます。</div>
         <a class="map-link" href="https://www.google.com/maps/search/珈琲舎蔵+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -172,6 +238,11 @@
       <div class="number">8</div>
       <div class="content">
         <div class="name">ギャラリー珈琲店 古瀬戸</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.56</span>
+          <span class="badge badge-google">Google ★ 4.0</span>
+        </div>
+        <div class="atmosphere">🗣 洋画家・城戸真亜子の壁画に囲まれた海底のような幻想空間。アートギャラリー併設の広々とした珈琲店。</div>
         <div class="desc">壁一面のアートに囲まれた、クリエイティブな雰囲気の店。</div>
         <a class="map-link" href="https://www.google.com/maps/search/ギャラリー珈琲店古瀬戸+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -184,7 +255,12 @@
       <div class="number">9</div>
       <div class="content">
         <div class="name">壹眞珈琲店（かずまこーひーてん）</div>
-        <div class="desc">高級なカップで提供される本格派。静寂が心地よいお店。</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.55</span>
+          <span class="badge badge-google">Google ★ 3.7</span>
+        </div>
+        <div class="atmosphere">🗣 ビートたけしの絵画とマイセンのカップが並ぶ昭和モダンな地下喫茶。注文のたびに豆を挽く職人気質の一杯。</div>
+        <div class="desc">高級なカップで提供される本格派。静寂が心地よいお店。1983年創業。</div>
         <a class="map-link" href="https://www.google.com/maps/search/壹眞珈琲店+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Googleマップで見る
@@ -196,6 +272,11 @@
       <div class="number">10</div>
       <div class="content">
         <div class="name">さぼうる2</div>
+        <div class="ratings">
+          <span class="badge badge-tabelog">食べログ ★ 3.49</span>
+          <span class="badge badge-google">Google ★ 4.0</span>
+        </div>
+        <div class="atmosphere">🗣 さぼうるの姉妹店。杉皮の天井と丸太の柱が作る洞窟のような空間で、山盛りナポリタンを頬張る。</div>
         <div class="desc">食事メニュー（特に山盛りのナポリタン）が有名な人気店。</div>
         <a class="map-link" href="https://www.google.com/maps/search/さぼうる2+神保町" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -205,5 +286,7 @@
     </div>
 
   </div>
+
+  <p style="text-align:center;margin-top:32px;font-size:0.75rem;color:#bbb;">評価は食べログ・Googleマップ参考値 / 2026年3月時点</p>
 </body>
 </html>
